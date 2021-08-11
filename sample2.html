@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comatible" content="IE-edge">
+    <meta name="viewport" content="width=device=width, intial-scale=1.0">
+    <title>Document</title>
+</head>>
+<body>
+    <div id='navi'> dummy </div>
+    <div class='food'> dummy food </div>
+    <div class='food'> dummy food </div>
+
+    <div data-group = "main" width="400px"> 400 px dummy </div>
+
+    <script>
+        //access element in page(document)
+        // var navi = document.getElementById('navi');
+        // navi.innerHTML = '<img src="https://namu.wiki/jump/GoV45kbn2kp2t4MwGTYkKluMbngc2elZOKLKlYiUPQQXWmfwqsvqDmtggkS3MxDdmwJSl%2FLXFlpf%2Fbc7xiaN0A%3D%3D">';
+        // var img = document.getElementsByTagName('img');
+        // var foods = document.getElementsByClassName('food');
+        //and
+        // var elems = document.getElementsByTagName('div');
+        // var result = elems.getElementsByClassName('food');
+
+        var navi = document.querySelector('#navi'); //메서드이름 찾기
+        var divs = document.querySelectorAll('div'); //태그네임 찾기
+        var foods = document.querySelectorAll('.food'); //클래스 찾기
+        //var result = document.querySelectorAll('div.food')
+        var result = document.querySelectorAll('div[width="400px"]');
+        if(result === null)
+        {
+            alert('contact system admin');
+        }
+
+    </script>
+</body>
+</html>

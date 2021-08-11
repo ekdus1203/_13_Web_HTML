@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Comatible" content="IE-edge">
+    <meta name="viewport" content="width=device=width, intial-scale=1.0">
+    <title>Document</title>
+</head>>
+<body>
+    //<!--HDML comment-->-+
+    <script>
+        // function todo()
+        // {
+        //     console.log('message')
+        //     document.write('message')
+        // }
+        // //함수를 전달 반환 할 수 있다.
+        // //callback 함수 <- API networking : waiting
+        // //Rest API, AJAX
+        // function request (callback)
+        // {
+        //     console.log('send request info');
+        //     console.log('end');
+        //     let data = 100;
+        //     //완료 후에 실행할 함수
+        //     return callback(data); //호출 결과
+        // }
+        // //함수를 전달, 반환할 수 있다.
+        // // 
+        // // call todo
+        // let rst = request(todo);
+        // console.lod(rst);
+
+        // function response()
+        // {
+        //     return todo;
+        // }
+        // response()('william');
+        // var proc = response();
+        // proc('mario');
+        var scores = [10,50,20,90]
+        for(let i=0; i<scores.length; i+=1)
+        {
+            console.log(scores[i]);
+        }
+        var student = {name:'mario',major:'mechanic'};
+        console.log(student.name,student.major)
+        //console.log(student[name],student[major]); 이렇게는 못 씀
+        //key-value
+        console.log(student['name'],student['major']);
+        var tutor = [{name:'jang'},{name:'kim'},{name:'park'}]
+        console.log(tutor[0]['name']);
+        console.log(tutor[0],name);
+
+        //4. JSON(내장객체)
+        const json = '{"result":true,"const":42}'; //string
+                        // 따옴표 반대로 하면 "">'','>" 틀렸다고 나옴
+        //string to object
+        const jsonObj = JSON.parse(json);
+        console.log(json);
+        console.log(jsonObj);
+
+        // object to stirng
+        const pos = {x:5,y:12};
+        const jsonPos = JSON.stringify(Pos);
+        console.log(jsonPos);
+
+
+    </script>
+</body>
+</html>
